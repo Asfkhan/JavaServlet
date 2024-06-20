@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>storedata</servlet-name>
+        <servlet-class>storedata</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>authenticate00</servlet-name>
+        <servlet-class>authenticate00</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>storedata</servlet-name>
+        <url-pattern>/storedata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>authenticate00</servlet-name>
+        <url-pattern>/authenticate00</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
